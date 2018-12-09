@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CartMart | TRAVEL</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto+Slab" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+
+<style>
+	*{
+	margin:0;
+	padding: 0;
+}
+body{
+	background: #eeeeee;
+}
+
+.tm-container{
+	max-width: 1100px;
+	margin: 0 auto;
+
+}
+.tm-header{
+	background: #ffffff;
+}
+.tm-header::after{
+	content: " ";
+	clear: both;
+	display: block;
+	visibility: none;
+
+}
+
+
+.tm-logo{
+	float:left;
+
+}
+.tm-nav{
+	width: 700px;
+	float: right;
+	font-size: 25px;
+
+}
+.tm-nav ul li{
+	display: inline-block;
+	font-family: 'Ubuntu', sans-serif;
+}
+.tm-nav ul li a{
+	padding:10px 20px;
+	text-decoration: none;
+	color: #303030;
+	line-height: 60px;
+}
+
+.tm-nav ul li a:hover{
+	color: #3e99ff;
+}
+
+#home{
+	position: absolute;
+	top: 70px;
+	left: 100px;
+	 opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#bd{
+	color: white;
+	font-family: 'Roboto Slab', serif;
+	font-size: 48px;
+	position: absolute;
+	top: 250px;
+	left: 160px;
+	text-decoration: underline;
+}
+
+#explore{
+	color: black;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 32px;
+	position: absolute;
+	top: 650px;
+	left: 580px;
+}
+
+#choose{
+	color: black;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 60px;
+	position: absolute;
+	top: 900px;
+	left: 440px;
+}
+#areapics{
+	position: absolute;
+	top: 1900px;
+	left: 100px;
+	width: 1100px;
+}
+
+#dhaka{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#dhaka:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#dhakaname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 150px;
+	left: 100px;
+	
+}
+
+#view1{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1200px;
+	left: 320px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#ctg{
+	position: absolute;
+	top: 0px;
+	left: 550px;
+}
+#ctg:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#ctgname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 140px;
+	left: 650px;
+	
+}
+
+#view2{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1200px;
+	left: 880px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#cox{
+	position: absolute;
+	top: 309px;
+	left: 0px;
+}
+#cox:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#coxname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 449px;
+	left: 130px;
+	
+}
+
+#view3{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1510px;
+	left: 320px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#syl{
+	position: absolute;
+	top: 309px;
+	left: 550px;
+}
+#syl:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#sylname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 36px;
+	position: absolute;
+	top: 449px;
+	left: 620px;
+	
+}
+
+#view4{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1510px;
+	left: 880px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#khul{
+	position: absolute;
+	top: 618px;
+	left: 0px;
+}
+#khul:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#khulname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 750px;
+	left: 110px;
+	
+}
+
+#view5{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1820px;
+	left: 320px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#ban{
+	position: absolute;
+	top: 618px;
+	left: 550px;
+}
+#ban:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#banname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 32px;
+	position: absolute;
+	top: 760px;
+	left: 575px;
+	
+}
+
+#view6{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1820px;
+	left: 880px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+}
+
+#about{
+	color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	position: absolute;
+	top: 800px;
+	left: 100px;
+}
+
+#description{
+	
+	position: absolute;
+	top: 870px;
+	left: 100px;
+	width: 1100px;
+}
+#description p{
+	color: black;
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+}
+
+#climate{
+	color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	position: absolute;
+	top: 1500px;
+	left: 100px;
+}
+
+#description2{
+	
+	position: absolute;
+	top: 1570px;
+	left: 100px;
+	width: 1100px;
+}
+#description2 p{
+	color: black;
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+}
+
+#area{
+	color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	position: absolute;
+	top: 1800px;
+	left: 100px;
+}
+
+#acco{
+color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	position: absolute;
+	top: 2900px;
+	left: 100px;	
+}
+#accopics{
+	position: absolute;
+	top: 3000px;
+	left: 100px;
+}
+
+#hotel1{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#hotel1:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#hote11name{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 36px;
+	position: absolute;
+	top: 150px;
+	left: 150px;
+	
+}
+#hotel2{
+	position: absolute;
+	top: 0px;
+	left: 550px;
+}
+#hotel2:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#hotel2name{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 36px;
+	position: absolute;
+	top: 150px;
+	left: 710px;
+	
+}
+#hotel3{
+	position: absolute;
+	top: 309px;
+	left: 0px;
+}
+#hotel3:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#hotel3name{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 449px;
+	left: 130px;
+	
+}
+#hotel4{
+	position: absolute;
+	top: 309px;
+	left: 550px;
+}
+#hotel4:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#hotel4name{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 36px;
+	position: absolute;
+	top: 449px;
+	left: 700px;
+	
+}
+
+</style>
+</head>
+<body>
+<header class="tm-header" >
+	<div class="tm-container">
+		
+	<img  src="cart.png" height="70" width="100" class="tm-logo">
+
+	
+
+		<nav class="tm-nav ">
+			<ul>
+				<li><a href="index.html" font size="1">Home</a></li>
+				<li>|</li>
+				<li><a href="food.html">Food</a></li>
+				<li>|</li>
+				<li><a href="travel.html">Travel</a></li>
+				<li>|</li>
+				<li><a href="shop.html">Shop</a></li>
+				<li>|</li>
+				<li><a href="profile.html">Profile</a></li>
+			</ul>
+		</nav>
+		<img id="home" src="TravelImages/dhaka2.jpg" alt="Food pic" width="1100px" height="675px" ;">	
+	<p id="bd"> DHAKA </p>
+	<p id="explore">EXPLORE DHAKA </p>
+	
+	<p id="about">ABOUT</p>
+	<div id="description">
+	<p>Dhaka (Bengali: ঢাকা, pronounced [ɖʱaka]; /ˈdɑːkə/ DAH-kə or /ˈdækə/ DAK-ə) is the capital and largest city of Bangladesh. The name of the city was spelled as Dacca, which was an anglicisation name until the current spelling was adopted in 1983 to match with Bengali pronunciation. Located in an eponymous district and division, it lies along the east bank of the Buriganga River in the heart of the Bengal delta. The city is a microcosm of the entire country, with diverse religious and ethnic communities. Dhaka is the economic, cultural and political center of Bangladesh. It is a major financial center of South Asia. It is one of the world's most populated cities and within OIC countries, with a population of 17 million people in the Greater Dhaka Area.[5][11] It is also the 4th most densely populated city in the world. </br></br>
+
+At the height of its medieval glory, Dhaka was regarded as one of the wealthiest and most prosperous cities in the world.[12] It was the Mughal capital of Bengal.[13] The city's name was Jahangir Nagar (City of Jahangir) in the 17th century. It was central to the economy of Mughal Bengal, which generated 50% of Mughal GDP.[12] It was a cosmopolitan commercial center and the hub of the worldwide muslin and silk trade.</br></br>
+
+The Mughals decorated the city with well-laid out gardens, tombs, mosques, palaces and forts. Dhaka became known as the City of Mosques in Bengal. It was also described as the Venice of the East.[14] The old city was home to various Eurasian merchant groups. The city hosted two important caravansaries of the subcontinent: the Bara Katra and Choto Katra, located on the riverfront of the Buriganga. Modern Dhaka developed from the late 20th century. Between 1905 and 1912, it was the capital of British Eastern Bengal and Assam..[15] In 1947, after ending of British rule, it became the administrative capital of the East Pakistan. It was declared as the legislative capital of Pakistan in 1962. In 1971, it became the capital of an independent Bangladesh.</br></br>
+
+Dhaka is home to most of the local business conglomerate. Many multinational companies also maintain offices in the city. Dhaka Stock Exchange is one of the largest in South Asia in terms of trading volume and market capitalization.[16] The city is home to a number of regional and international training and development organizations, such as permanent secretariat of BIMSTEC. The city has the largest number of cycle rickshaws and is known as the Rickshaw Capital of the World.</br></br></p>
+	
+		
+	</div>
+
+	<p id="climate">CLIMATE</p>
+	<div id="description2">
+	<p>Dhaka experiences a humid tropical climate most of the year. Under the Köppen climate classification, Dhaka has a tropical savanna climate. The city has a distinct monsoonal season, with an annual average temperature of 26 °C (79 °F) and monthly means varying between 19 °C (66 °F) in January and 29 °C (84 °F) in May.[48] Approximately 87% of the annual average rainfall of 2,123 millimetres (83.6 inches) occurs between May and October.[48] Increasing air and water pollution emanating from traffic congestion and industrial waste are serious problems affecting public health and the quality of life in the city.[49] Water bodies and wetlands around Dhaka are facing destruction as these are being filled up to construct multi-storied buildings and other real estate developments. Coupled with pollution, such erosion of natural habitats threatens to destroy much of the regional biodiversity.</br></br></p>
+	
+		
+	</div>
+
+	<p id="area">AREAS OF DHAKA</p>
+	<div id="areapics">
+	<img id="dhaka" src="TravelImages/lalbagh.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="dhakaname">LALBAGH FORT</p>
+	
+
+	<img id="ctg" src="TravelImages/ahsan.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="ctgname">AHSAN MANZIL</p>
+	
+	<img id="cox" src="TravelImages/sona.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="coxname">SONARGAON</p>
+	
+	<img id="syl" src="TravelImages/dhakeshwari.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="sylname">DHAKESHWARI TEMPLE</p>
+	
+	<img id="khul" src="TravelImages/minar.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="khulname">SHAHID MINAR</p>
+	
+	<img id="ban" src="TravelImages/smriti.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="banname">NATIONAL MARTYRS' MEMORIAL</p>
+		
+	</div>
+
+	<p id="acco">ACCOMODATIONS IN DHAKA</p>
+
+	<div id="accopics">
+
+	<img id="hotel1" src="TravelImages/lakeshore.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="hote11name">LAKESHORE</p>
+	
+
+	<img id="hotel2" src="TravelImages/six.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="hotel2name">SIXSEASONS</p>
+	
+	<img id="hotel3" src="TravelImages/babylon.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="hotel3name">BABYLON</p>
+	
+	<img id="hotel4" src="TravelImages/meridian.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="hotel4name">LEMERIDIAN</p>
+	
+	
+		
+	</div>
+
+	</div>
+	
+
+	</header>
+	
+	
+
+	
+</body>
+</html>

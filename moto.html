@@ -1,0 +1,943 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CartMart | Phone</title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<style>
+		*{
+	margin:0;
+	padding: 0;
+}
+body{
+	background: #eeeeee;
+}
+
+.tm-container{
+	max-width: 1100px;
+	margin: 0 auto;
+
+}
+.tm-header{
+	background: #ffffff;
+}
+.tm-header::after{
+	content: " ";
+	clear: both;
+	display: block;
+	visibility: none;
+
+}
+
+
+.tm-logo{
+	float:left;
+
+}
+.tm-nav{
+	width: 700px;
+	float: right;
+	font-size: 25px;
+
+}
+.tm-nav ul li{
+	display: inline-block;
+	font-family: 'Ubuntu', sans-serif;
+}
+.tm-nav ul li a{
+	padding:10px 20px;
+	text-decoration: none;
+	color: #303030;
+	line-height: 60px;
+}
+
+.tm-nav ul li a:hover{
+	color: #3e99ff;
+}
+
+#list{
+	width: 400px;
+	height: 450px;
+	position: absolute;
+	top: 110px;
+	left: 10px;
+	background-color: white;
+}
+#name{
+	color: black;
+	font-family: 'Oswald', sans-serif;
+	
+	font-size: 24px;
+	position: absolute;
+	top: 100px;
+	left: 450px;
+
+}
+
+#caption{
+	color: black;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 18px;
+	position: absolute;
+	top: 140px;
+	left: 450px;
+
+}
+
+
+#box1{
+	background-color: white;
+	position: absolute;
+	top: 180px;
+	left: 450px;
+	width: 800px;
+	height: 250px;
+	border: solid black 1px;
+}
+
+#top{
+	width: 400px;
+	height: 50px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #13c805
+
+	
+}
+#top p{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 18px;
+	text-align: center;
+	padding: 15px;
+	
+}
+#list ul{
+	position: absolute;
+	top: 60px;
+	left: 70px;
+	padding: 70px;
+
+text-align: center;
+
+list-style-type: none;
+line-height: 35px;
+}
+
+#list ul a{
+	color: black;
+	font-family: 'Open+Sans', sans-serif;
+	font-size: 20px;
+
+	text-decoration: none;
+
+
+	
+}
+#list ul a:hover{
+	
+
+	text-decoration: underline;
+
+
+	
+}
+#b1{
+	position: absolute;
+	top: 25px;
+	left: 30px;
+}
+#b1name{
+	position: absolute;
+	top: 15px;
+	left: 255px;
+	font-family: Adobe Fan Heiti Std;
+	font-size: 24px;
+	color: black;
+	 
+}
+#b1d{
+	position: absolute;
+	top: 60px;
+	left: 255px;
+	font-family: Lucida Sans Unicode;
+	font-size: 18px;
+	color: black;
+
+}
+#c1 a{
+	
+text-decoration: none;
+	width: 130px;
+	padding: 20px;
+	position: relative;
+	top: 170px;
+	left: 255px;
+	border: solid black;
+	font-size: 20px;
+    color: black;
+    
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    
+	
+}
+#box2{
+	background-color: white;
+	position: absolute;
+	top: 430px;
+	left: 450px;
+	width: 800px;
+	height: 250px;
+	border: solid black 1px;
+}
+
+#b2{
+	position: absolute;
+	top: 25px;
+	left: 30px;
+}
+#b2name{
+	position: absolute;
+	top: 15px;
+	left: 255px;
+	font-family: Adobe Fan Heiti Std;
+	font-size: 24px;
+	color: black;
+	 
+}
+#b2d{
+	position: absolute;
+	top: 60px;
+	left: 255px;
+	font-family: Lucida Sans Unicode;
+	font-size: 18px;
+	color: black;
+
+}
+#c2 a{
+	
+text-decoration: none;
+	width: 130px;
+	padding: 20px;
+	position: relative;
+	top: 170px;
+	left: 255px;
+	border: solid black;
+	font-size: 20px;
+    color: black;
+    
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    
+	
+}
+
+#box3{
+	background-color: white;
+	position: absolute;
+	top: 680px;
+	left: 450px;
+	width: 800px;
+	height: 250px;
+	border: solid black 1px;
+}
+
+#b3{
+	position: absolute;
+	top: 25px;
+	left: 30px;
+}
+#b3name{
+	position: absolute;
+	top: 15px;
+	left: 255px;
+	font-family: Adobe Fan Heiti Std;
+	font-size: 24px;
+	color: black;
+	 
+}
+#b3d{
+	position: absolute;
+	top: 60px;
+	left: 255px;
+	font-family: Lucida Sans Unicode;
+	font-size: 18px;
+	color: black;
+
+}
+#c3 a{
+	
+text-decoration: none;
+	width: 130px;
+	padding: 20px;
+	position: relative;
+	top: 170px;
+	left: 255px;
+	border: solid black;
+	font-size: 20px;
+    color: black;
+    
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    
+	
+}
+
+#box4{
+	background-color: white;
+	position: absolute;
+	top: 930px;
+	left: 450px;
+	width: 800px;
+	height: 250px;
+	border: solid black 1px;
+}
+
+#b4{
+	position: absolute;
+	top: 25px;
+	left: 30px;
+}
+#b4name{
+	position: absolute;
+	top: 15px;
+	left: 255px;
+	font-family: Adobe Fan Heiti Std;
+	font-size: 24px;
+	color: black;
+	 
+}
+#b4d{
+	position: absolute;
+	top: 60px;
+	left: 255px;
+	font-family: Lucida Sans Unicode;
+	font-size: 18px;
+	color: black;
+
+}
+#c4 a{
+	
+text-decoration: none;
+	width: 130px;
+	padding: 20px;
+	position: relative;
+	top: 170px;
+	left: 255px;
+	border: solid black;
+	font-size: 20px;
+    color: black;
+    
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    
+	
+}
+
+#box5{
+	background-color: white;
+	position: absolute;
+	top: 1180px;
+	left: 450px;
+	width: 800px;
+	height: 250px;
+	border: solid black 1px;
+}
+
+#b5{
+	position: absolute;
+	top: 25px;
+	left: 30px;
+}
+#b5name{
+	position: absolute;
+	top: 15px;
+	left: 255px;
+	font-family: Adobe Fan Heiti Std;
+	font-size: 24px;
+	color: black;
+	 
+}
+#b5d{
+	position: absolute;
+	top: 60px;
+	left: 255px;
+	font-family: Lucida Sans Unicode;
+	font-size: 18px;
+	color: black;
+
+}
+#c5 a{
+	
+text-decoration: none;
+	width: 130px;
+	padding: 20px;
+	position: relative;
+	top: 170px;
+	left: 255px;
+	border: solid black;
+	font-size: 20px;
+    color: black;
+    
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    
+	
+}
+
+#box6{
+	background-color: white;
+	position: absolute;
+	top: 1430px;
+	left: 450px;
+	width: 800px;
+	height: 250px;
+	border: solid black 1px;
+}
+
+#b6{
+	position: absolute;
+	top: 25px;
+	left: 30px;
+}
+#b6name{
+	position: absolute;
+	top: 15px;
+	left: 255px;
+	font-family: Adobe Fan Heiti Std;
+	font-size: 24px;
+	color: black;
+	 
+}
+#b6d{
+	position: absolute;
+	top: 60px;
+	left: 255px;
+	font-family: Lucida Sans Unicode;
+	font-size: 18px;
+	color: black;
+
+}
+#c6 a{
+	
+text-decoration: none;
+	width: 130px;
+	padding: 20px;
+	position: relative;
+	top: 170px;
+	left: 255px;
+	border: solid black;
+	font-size: 20px;
+    color: black;
+    
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    
+	
+}
+
+#box7{
+	background-color: white;
+	position: absolute;
+	top: 1680px;
+	left: 450px;
+	width: 800px;
+	height: 250px;
+	border: solid black 1px;
+}
+
+#b7{
+	position: absolute;
+	top: 25px;
+	left: 30px;
+}
+#b7name{
+	position: absolute;
+	top: 15px;
+	left: 255px;
+	font-family: Adobe Fan Heiti Std;
+	font-size: 24px;
+	color: black;
+	 
+}
+#b7d{
+	position: absolute;
+	top: 60px;
+	left: 255px;
+	font-family: Lucida Sans Unicode;
+	font-size: 18px;
+	color: black;
+
+}
+#c7 a{
+	
+text-decoration: none;
+	width: 130px;
+	padding: 20px;
+	position: relative;
+	top: 170px;
+	left: 255px;
+	border: solid black;
+	font-size: 20px;
+    color: black;
+    
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    
+	
+}
+#box8{
+	background-color: white;
+	position: absolute;
+	top: 1930px;
+	left: 450px;
+	width: 800px;
+	height: 250px;
+	border: solid black 1px;
+}
+
+#b8{
+	position: absolute;
+	top: 25px;
+	left: 30px;
+}
+#b8name{
+	position: absolute;
+	top: 15px;
+	left: 255px;
+	font-family: Adobe Fan Heiti Std;
+	font-size: 24px;
+	color: black;
+	 
+}
+#b8d{
+	position: absolute;
+	top: 60px;
+	left: 255px;
+	font-family: Lucida Sans Unicode;
+	font-size: 18px;
+	color: black;
+
+}
+#c8 a{
+	
+text-decoration: none;
+	width: 130px;
+	padding: 20px;
+	position: relative;
+	top: 170px;
+	left: 255px;
+	border: solid black;
+	font-size: 20px;
+    color: black;
+    
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    
+	
+}
+#box9{
+	background-color: white;
+	position: absolute;
+	top: 2180px;
+	left: 450px;
+	width: 800px;
+	height: 250px;
+	border: solid black 1px;
+}
+
+#b9{
+	position: absolute;
+	top: 25px;
+	left: 30px;
+}
+#b9name{
+	position: absolute;
+	top: 15px;
+	left: 255px;
+	font-family: Adobe Fan Heiti Std;
+	font-size: 24px;
+	color: black;
+	 
+}
+#b9d{
+	position: absolute;
+	top: 60px;
+	left: 255px;
+	font-family: Lucida Sans Unicode;
+	font-size: 18px;
+	color: black;
+
+}
+#c9 a{
+	
+text-decoration: none;
+	width: 130px;
+	padding: 20px;
+	position: relative;
+	top: 170px;
+	left: 255px;
+	border: solid black;
+	font-size: 20px;
+    color: black;
+    
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    
+	
+}
+
+#box10{
+	background-color: white;
+	position: absolute;
+	top: 2430px;
+	left: 450px;
+	width: 800px;
+	height: 250px;
+	border: solid black 1px;
+}
+
+#b10{
+	position: absolute;
+	top: 25px;
+	left: 30px;
+}
+#b10name{
+	position: absolute;
+	top: 15px;
+	left: 255px;
+	font-family: Adobe Fan Heiti Std;
+	font-size: 24px;
+	color: black;
+	 
+}
+#b10d{
+	position: absolute;
+	top: 60px;
+	left: 255px;
+	font-family: Lucida Sans Unicode;
+	font-size: 18px;
+	color: black;
+
+}
+#c10 a{
+	
+text-decoration: none;
+	width: 130px;
+	padding: 20px;
+	position: relative;
+	top: 170px;
+	left: 255px;
+	border: solid black;
+	font-size: 20px;
+    color: black;
+    
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    
+	
+}
+#box11{
+	background-color: white;
+	position: absolute;
+	top: 2680px;
+	left: 450px;
+	width: 800px;
+	height: 250px;
+	border: solid black 1px;
+}
+
+#b11{
+	position: absolute;
+	top: 25px;
+	left: 30px;
+}
+#b11name{
+	position: absolute;
+	top: 15px;
+	left: 255px;
+	font-family: Adobe Fan Heiti Std;
+	font-size: 24px;
+	color: black;
+	 
+}
+#b11d{
+	position: absolute;
+	top: 60px;
+	left: 255px;
+	font-family: Lucida Sans Unicode;
+	font-size: 18px;
+	color: black;
+
+}
+#c11 a{
+	
+text-decoration: none;
+	width: 130px;
+	padding: 20px;
+	position: relative;
+	top: 170px;
+	left: 255px;
+	border: solid black;
+	font-size: 20px;
+    color: black;
+    
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    
+	
+}
+
+#box12{
+	background-color: white;
+	position: absolute;
+	top: 2930px;
+	left: 450px;
+	width: 800px;
+	height: 250px;
+	border: solid black 1px;
+}
+
+#b12{
+	position: absolute;
+	top: 25px;
+	left: 30px;
+}
+#b12name{
+	position: absolute;
+	top: 15px;
+	left: 255px;
+	font-family: Adobe Fan Heiti Std;
+	font-size: 24px;
+	color: black;
+	 
+}
+#b12d{
+	position: absolute;
+	top: 60px;
+	left: 255px;
+	font-family: Lucida Sans Unicode;
+	font-size: 18px;
+	color: black;
+
+}
+#c12 a{
+	
+text-decoration: none;
+	width: 130px;
+	padding: 20px;
+	position: relative;
+	top: 170px;
+	left: 255px;
+	border: solid black;
+	font-size: 20px;
+    color: black;
+    
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    
+	
+}
+
+#box13{
+	background-color: white;
+	position: absolute;
+	top: 3180px;
+	left: 450px;
+	width: 800px;
+	height: 250px;
+	border: solid black 1px;
+}
+
+#b13{
+	position: absolute;
+	top: 25px;
+	left: 30px;
+}
+#b13name{
+	position: absolute;
+	top: 15px;
+	left: 255px;
+	font-family: Adobe Fan Heiti Std;
+	font-size: 24px;
+	color: black;
+	 
+}
+#b13d{
+	position: absolute;
+	top: 60px;
+	left: 255px;
+	font-family: Lucida Sans Unicode;
+	font-size: 18px;
+	color: black;
+
+}
+#c13 a{
+	
+text-decoration: none;
+	width: 130px;
+	padding: 20px;
+	position: relative;
+	top: 170px;
+	left: 255px;
+	border: solid black;
+	font-size: 20px;
+    color: black;
+    
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    
+	
+}
+#box14{
+	background-color: white;
+	position: absolute;
+	top: 3430px;
+	left: 450px;
+	width: 800px;
+	height: 250px;
+	border: solid black 1px;
+}
+
+#b14{
+	position: absolute;
+	top: 25px;
+	left: 30px;
+}
+#b14name{
+	position: absolute;
+	top: 15px;
+	left: 255px;
+	font-family: Adobe Fan Heiti Std;
+	font-size: 24px;
+	color: black;
+	 
+}
+#b14d{
+	position: absolute;
+	top: 60px;
+	left: 255px;
+	font-family: Lucida Sans Unicode;
+	font-size: 18px;
+	color: black;
+
+}
+#c14 a{
+	
+text-decoration: none;
+	width: 130px;
+	padding: 20px;
+	position: relative;
+	top: 170px;
+	left: 255px;
+	border: solid black;
+	font-size: 20px;
+    color: black;
+    
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    
+	
+}
+
+	</style>
+
+</head>
+<body>
+<header class="tm-header" >
+	<div class="tm-container">
+		
+	<img  src="cart.png" height="70" width="100" class="tm-logo">
+
+	
+
+		<nav class="tm-nav ">
+			<ul>
+				<li><a href="index.html" font size="1">Home</a></li>
+				<li>|</li>
+				<li><a href="food.html">Food</a></li>
+				<li>|</li>
+				<li><a href="travel.html">Travel</a></li>
+				<li>|</li>
+				<li><a href="shop.html">Shop</a></li>
+				<li>|</li>
+				<li><a href="profile.html">Profile</a></li>
+			</ul>
+		</nav>
+
+		<div id="list">
+	<div id="top">
+			<p>BRANDS</p>
+		</div>
+		<ul>
+			<li> <a href="samsung.html"> SAMSUNG</a></li>
+			<li> <a href="apple.html"> APPLE</a></li>
+			<li> <a href="xiaomi.html"> XIAOMI</a></li>
+			<li> <a href="moto.html"> MOTOROLA</a></li>
+			<li> <a href="lg.html"> LG</a></li>
+			<li> <a href="oneplus.html"> ONE PLUS</a></li>
+		</ul>
+	</div>
+
+	<p id="name"> Motorola</p>
+	<p id="caption"> Find out your favorite phones from Motorola. Add to cart to order.</p>
+
+	
+	<div id="box1"> 
+	<img id="b1" src="PhoneImages/m1.jpeg" width="200" height="200" >
+	<p id="b1name"> Motorola Moto Z2 Force </p>
+	<p id="b1d"> Brand: Motorola</br> Price: 50000 Taka</p>
+	<p id="c1"> <a href="">Add To Cart</a>  </p> 
+	</div>
+
+	<div id="box2"> 
+	<img id="b2" src="PhoneImages/m2.jpeg" width="200" height="200" >
+	<p id="b2name"> Motorola Moto Z2 Play</p>
+	<p id="b2d"> Brand: Motorola </br> Price: 49000 Taka</p>
+	<p id="c2"> <a href="">Add To Cart</a>  </p> 
+	</div>
+
+	<div id="box3"> 
+	<img id="b3" src="PhoneImages/m3.jpeg" width="200" height="200" >
+	<p id="b3name"> Motorola Moto E4 Plus</p>
+	<p id="b3d"> Brand: Motorola </br> Price: 46000 Taka</p>
+	<p id="c3"> <a href="">Add To Cart</a>  </p> 
+	</div>
+
+	<div id="box4"> 
+	<img id="b4" src="PhoneImages/m4.jpeg" width="200" height="200" >
+	<p id="b4name"> Motorola Moto E4 </p>
+	<p id="b4d"> Brand: Motorola</br> Price: 42000 Taka</p>
+	<p id="c4"> <a href="">Add To Cart</a>  </p> 
+	</div>
+
+	<div id="box5"> 
+	<img id="b5" src="PhoneImages/m5.jpeg" width="200" height="200" >
+	<p id="b5name"> Motorola Moto C Plus </p>
+	<p id="b5d"> Brand: Motorola</br> Price: 41000 Taka</p>
+	<p id="c5"> <a href="">Add To Cart</a>  </p> 
+	</div>
+
+	
+	
+	</div>
+
+	
+
+	
+		
+	
+	
+	
+	</header>
+	
+
+	
+</body>
+</html>

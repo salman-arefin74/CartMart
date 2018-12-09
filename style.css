@@ -1,0 +1,199 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	background: #eeeeee;
+}
+
+.tm-container{
+	max-width: 1100px;
+	margin: 0 auto;
+}
+.tm-header{
+	background: #ffffff;
+}
+.tm-header::after{
+	content: " ";
+	clear: both;
+	display: block;
+	visibility: none;
+
+}
+.tm-logo{
+	float:left;
+
+}
+.tm-nav{
+	width: 700px;
+	float: right;
+	font-size: 25px;
+
+}
+.tm-nav ul li{
+	display: inline-block;
+	font-family: 'Ubuntu', sans-serif;
+}
+.tm-nav ul li a{
+	padding:10px 20px;
+	text-decoration: none;
+	color: #303030;
+	line-height: 60px;
+}
+
+.tm-nav ul li a:hover{
+	color: #3e99ff;
+}
+.parallax { 
+    /* The image used */
+    
+    background-image: url("HomeImages/food.jpg");
+    /* Set a specific height */
+    height: 800px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 { 
+    /* The image used */
+    
+    background-image: url("HomeImages/SAJEK1.jpg");
+    /* Set a specific height */
+    height: 800px; 
+
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.parallax3 { 
+    /* The image used */
+    
+    background-image: url("HomeImages/gadget.jpg");
+    /* Set a specific height */
+    height: 800px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img{
+	max-width: 100%;
+}
+.tm-content{
+	margin-top: 15px;
+	margin-bottom: 30px;
+	border: 5px;
+}
+.tm-article{
+	background-color: #fff;
+	padding: 30px;
+}
+.tm-betadiv{
+	
+	background: #eeeeee;
+}
+
+#header1{
+	font-family: 'Ubuntu', sans-serif;
+
+	font-size: 20px;
+	position: absolute;
+	left: 450px;
+	
+}
+
+#resturants a{
+	
+text-decoration: none;
+	width: 130px;
+	padding: 10px;
+	position: relative;
+	left: 460px;
+	border: solid black;
+	font-size: 20px;
+    color: black;
+    
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    
+	
+}
+#resturants a:hover{
+	
+text-decoration: underline;
+	
+	
+}
+#travel a:hover{
+	
+text-decoration: underline;
+	
+	
+}
+#shop a:hover{
+	
+text-decoration: underline;
+	
+	
+}
+#header2{
+	font-family: 'Ubuntu', sans-serif;
+
+	font-size: 20px;
+	position: absolute;
+	left: 450px 
+
+}
+
+#travel a{
+	
+text-decoration: none;
+	width: 130px;
+	padding: 10px;
+	position: relative;
+	left: 490px;
+	border: solid black;
+	font-size: 20px;
+    color: black;
+    
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    
+	
+}
+
+#header3{
+	font-family: 'Ubuntu', sans-serif;
+
+	font-size: 20px;
+	position: absolute;
+	left: 450px 
+
+}
+
+#shop a{
+	
+text-decoration: none;
+	width: 130px;
+	padding: 10px;
+	position: relative;
+	left: 470px;
+	border: solid black;
+	font-size: 20px;
+    color: black;
+    
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    
+	
+}

@@ -1,0 +1,49 @@
+body
+{
+	margin: 0 auto;
+	background-image: url("BD.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% ;
+}
+
+.tm-container
+{
+	width: 500px;
+	height: 500px;
+	text-align: center;
+		border-radius: 8px;
+	margin: 0 auto;
+	background-color: rgba(21, 37, 108,0.3 ); 
+	margin-top:150px;
+
+}
+.tm-container img{
+	width: 120px;
+	height: 120px;
+	margin-top: 40px;
+	margin-bottom: 30px;]
+}
+input[type="text"],input[type="password"]{
+	height: 45px;
+	width: 300px;
+	font-size: 18px;
+	border: none;
+	margin-bottom: 20px;
+	background-color: #fff;
+	font-family: 'Acme', sans-serif;
+	padding-left: 30px;
+
+}
+.tm-btn{
+	padding: 15px 50px;
+	color: #fff;
+	border: none;
+	background-color: rgba(9, 23, 85,0.3);
+	text-align: center;
+	margin-bottom: 20px;
+}
+a{
+	margin-top: 10px;
+	color: #fff;
+
+}

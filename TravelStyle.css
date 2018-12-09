@@ -1,0 +1,312 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	background: #eeeeee;
+}
+
+.tm-container{
+	max-width: 1100px;
+	margin: 0 auto;
+
+}
+.tm-header{
+	background: #ffffff;
+}
+.tm-header::after{
+	content: " ";
+	clear: both;
+	display: block;
+	visibility: none;
+
+}
+
+
+.tm-logo{
+	float:left;
+
+}
+.tm-nav{
+	width: 700px;
+	float: right;
+	font-size: 25px;
+
+}
+.tm-nav ul li{
+	display: inline-block;
+	font-family: 'Ubuntu', sans-serif;
+}
+.tm-nav ul li a{
+	padding:10px 20px;
+	text-decoration: none;
+	color: #303030;
+	line-height: 60px;
+}
+
+.tm-nav ul li a:hover{
+	color: #3e99ff;
+}
+
+#home{
+	position: absolute;
+	top: 70px;
+	left: 100px;
+	 opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#bd{
+	color: white;
+	font-family: 'Roboto Slab', serif;
+	font-size: 48px;
+	position: absolute;
+	top: 250px;
+	left: 160px;
+	text-decoration: underline;
+}
+
+#explore{
+	color: black;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 32px;
+	position: absolute;
+	top: 650px;
+	left: 515px;
+}
+
+#choose{
+	color: black;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 60px;
+	position: absolute;
+	top: 900px;
+	left: 440px;
+}
+
+#dhaka{
+	position: absolute;
+	top: 1000px;
+	left: 100px;
+}
+#dhaka:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#dhakaname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 1150px;
+	left: 300px;
+	
+}
+
+#view1{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1200px;
+	left: 320px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#ctg{
+	position: absolute;
+	top: 1000px;
+	left: 650px;
+}
+#ctg:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#ctgname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 1150px;
+	left: 795px;
+	
+}
+
+#view2{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1200px;
+	left: 880px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#cox{
+	position: absolute;
+	top: 1309px;
+	left: 100px;
+}
+#cox:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#coxname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 1459px;
+	left: 235px;
+	
+}
+
+#view3{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1510px;
+	left: 320px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#syl{
+	position: absolute;
+	top: 1309px;
+	left: 650px;
+}
+#syl:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#sylname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 1459px;
+	left: 860px;
+	
+}
+
+#view4{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1510px;
+	left: 880px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#khul{
+	position: absolute;
+	top: 1618px;
+	left: 100px;
+}
+#khul:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#khulname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 1768px;
+	left: 290px;
+	
+}
+
+#view5{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1820px;
+	left: 320px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#ban{
+	position: absolute;
+	top: 1618px;
+	left: 650px;
+}
+#ban:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#banname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 1768px;
+	left: 810px;
+	
+}
+
+#view6{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1820px;
+	left: 880px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CartMart | TRAVEL</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto+Slab" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+
+<style>
+	*{
+	margin:0;
+	padding: 0;
+}
+body{
+	background: #eeeeee;
+}
+
+.tm-container{
+	max-width: 1100px;
+	margin: 0 auto;
+
+}
+.tm-header{
+	background: #ffffff;
+}
+.tm-header::after{
+	content: " ";
+	clear: both;
+	display: block;
+	visibility: none;
+
+}
+
+
+.tm-logo{
+	float:left;
+
+}
+.tm-nav{
+	width: 700px;
+	float: right;
+	font-size: 25px;
+
+}
+.tm-nav ul li{
+	display: inline-block;
+	font-family: 'Ubuntu', sans-serif;
+}
+.tm-nav ul li a{
+	padding:10px 20px;
+	text-decoration: none;
+	color: #303030;
+	line-height: 60px;
+}
+
+.tm-nav ul li a:hover{
+	color: #3e99ff;
+}
+
+#home{
+	position: absolute;
+	top: 70px;
+	left: 100px;
+	 opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#bd{
+	color: white;
+	font-family: 'Roboto Slab', serif;
+	font-size: 48px;
+	position: absolute;
+	top: 250px;
+	left: 160px;
+	text-decoration: underline;
+}
+
+#explore{
+	color: black;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 32px;
+	position: absolute;
+	top: 650px;
+	left: 540px;
+}
+
+#choose{
+	color: black;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 60px;
+	position: absolute;
+	top: 900px;
+	left: 440px;
+}
+#areapics{
+	position: absolute;
+	top: 2150px;
+	left: 100px;
+	width: 1100px;
+}
+
+#dhaka{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#dhaka:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#dhakaname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 130px;
+	left: 70px;
+	
+}
+
+#view1{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1200px;
+	left: 320px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#ctg{
+	position: absolute;
+	top: 0px;
+	left: 550px;
+}
+#ctg:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#ctgname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 130px;
+	left: 710px;
+	
+}
+
+#view2{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1200px;
+	left: 880px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#cox{
+	position: absolute;
+	top: 309px;
+	left: 0px;
+}
+#cox:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#coxname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 449px;
+	left: 80px;
+	
+}
+
+#view3{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1510px;
+	left: 320px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#syl{
+	position: absolute;
+	top: 309px;
+	left: 550px;
+}
+#syl:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#sylname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 36px;
+	position: absolute;
+	top: 449px;
+	left: 690px;
+	
+}
+
+#view4{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1510px;
+	left: 880px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#khul{
+	position: absolute;
+	top: 618px;
+	left: 0px;
+}
+#khul:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#khulname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 32px;
+	position: absolute;
+	top: 750px;
+	left: 90px;
+	
+}
+
+#view5{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1820px;
+	left: 320px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#ban{
+	position: absolute;
+	top: 618px;
+	left: 550px;
+}
+#ban:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#banname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 32px;
+	position: absolute;
+	top: 760px;
+	left: 575px;
+	
+}
+
+#view6{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1820px;
+	left: 880px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+}
+
+#about{
+	color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	position: absolute;
+	top: 800px;
+	left: 100px;
+}
+
+#description{
+	
+	position: absolute;
+	top: 870px;
+	left: 100px;
+	width: 1100px;
+}
+#description p{
+	color: black;
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+}
+
+#climate{
+	color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	position: absolute;
+	top: 1450px;
+	left: 100px;
+}
+
+#description2{
+	
+	position: absolute;
+	top: 1520px;
+	left: 100px;
+	width: 1100px;
+}
+#description2 p{
+	color: black;
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+}
+
+#area{
+	color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	position: absolute;
+	top: 2050px;
+	left: 100px;
+}
+
+#acco{
+color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	position: absolute;
+	top: 2900px;
+	left: 100px;	
+}
+#accopics{
+	position: absolute;
+	top: 3000px;
+	left: 100px;
+}
+
+#hotel1{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#hotel1:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#hote11name{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 36px;
+	position: absolute;
+	top: 150px;
+	left: 180px;
+	
+}
+#hotel2{
+	position: absolute;
+	top: 0px;
+	left: 550px;
+}
+#hotel2:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#hotel2name{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 36px;
+	position: absolute;
+	top: 150px;
+	left: 730px;
+	
+}
+#hotel3{
+	position: absolute;
+	top: 309px;
+	left: 0px;
+}
+#hotel3:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#hotel3name{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 449px;
+	left: 160px;
+	
+}
+#hotel4{
+	position: absolute;
+	top: 309px;
+	left: 550px;
+}
+#hotel4:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#hotel4name{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 36px;
+	position: absolute;
+	top: 470px;
+	left: 750px;
+	
+}
+
+</style>
+</head>
+<body>
+<header class="tm-header" >
+	<div class="tm-container">
+		
+	<img  src="cart.png" height="70" width="100" class="tm-logo">
+
+	
+
+		<nav class="tm-nav ">
+			<ul>
+				<li><a href="index.html" font size="1">Home</a></li>
+				<li>|</li>
+				<li><a href="food.html">Food</a></li>
+				<li>|</li>
+				<li><a href="travel.html">Travel</a></li>
+				<li>|</li>
+				<li><a href="shop.html">Shop</a></li>
+				<li>|</li>
+				<li><a href="profile.html">Profile</a></li>
+			</ul>
+		</nav>
+		<img id="home" src="TravelImages/syl.jpg" alt="Food pic" width="1100px" height="675px" ;">	
+	<p id="bd"> SYLHET </p>
+	<p id="explore">EXPLORE SYLHET </p>
+	
+	<p id="about">ABOUT</p>
+	<div id="description">
+	<p>TSylhet /sɪlhət/, also known as Jalalabad, is a metropolitan city in northeastern Bangladesh. It is the administrative seat of Sylhet Division. The city is located on the right bank of the Surma River in northeastern Bengal. It has a subtropical climate and lush highland terrain. The city has a population of more than 800,000 residents.[4] Sylhet is one of Bangladesh's most important spiritual and cultural centers. It is one of the most important cities of Bangladesh, after Dhaka and Chittagong because due to its importance to the country's economy, as well as its status as a tourist destination. The city's dargahs, or burial sites of Muslim saints, draw several thousand devotees each year.</br></br>
+
+The name of Sylhet is the anglicized form of the ancient Indo-Aryan term Srihatta.[5] In 1303, the Sufi Muslim leader Shah Jalal conquered Sylhet by defeating the local Hindu Raja.[6] Ibn Battuta visited Sylhet in the 14th century and saw Bengali Muslims transforming the region into an agricultural basket.[7] Sylhet was a mint town of the Bengal Sultanate. In the 16th-century, Sylhet was controlled by the Baro-Bhuyan zamindars and became a district of the Mughal Empire.[8] British rule began in the 18th century under the administration of the East India Company. With its ancient seafaring tradition, Sylhet became a key source of lascars in the British Empire. The Sylhet municipal board was established in 1867.[9] Originally part of the Bengal Presidency and later Eastern Bengal and Assam; the town was part of Colonial Assam between 1874 and 1947, when following a referendum and the partition of British India, it became part of East Bengal.[6] The Sylhet City Corporation was constituted in 2001. The Government of Bangladesh designated Sylhet a metropolitan area in 2009.[10]</br></br>
+
+The hinterland of the Sylhet valley is the largest oil and gas-producing region in Bangladesh. It is also the largest hub of tea production in Bangladesh. It is notable for its high-quality cane and agarwood.[11][12] The city is served by the Osmani International Airport. People from Sylhet form a significant portion of the Bangladeshi diaspora, particularly in Britain.</br></br></p>
+	
+		
+	</div>
+
+	<p id="climate">CLIMATE</p>
+	<div id="description2">
+	<p>Sylhet is located at 24.8917°N 91.8833°E, in the north eastern region of Bangladesh within the Sylhet Division, within the Sylhet District and Sylhet Sadar Upazila. Sylhet has a typical Bangladesh tropical monsoon climate (Köppen Am) bordering on a humid subtropical climate (Cwa) at higher elevations. The rainy season from April to October is hot and humid with very heavy showers and thunderstorms almost every day, whilst the short dry season from November to February is very warm and fairly clear. Nearly 80% of the annual average rainfall of 4,200 millimetres (170 in) occurs between May and September.[29]</br></br>
+
+The city is located within the region where there are hills and basins which constitute one of the most distinctive regions in Bangladesh. The physiography of Sylhet consists mainly of hill soils, encompassing a few large depressions known locally as "beels" which can be mainly classified as oxbow lakes, caused by tectonic subsidence primarily during the earthquake of 1762. It is flanked by the Indian states of the Meghalaya in the north, Assam in the east, Tripura in the south and the Bangladesh districts of Netrokona, Kishoregonj and Brahmanbaria in the west. The area covered by Sylhet Division is 12,569 km2, which is about 8% of the total land area of Bangladesh.</br></br>
+
+Geologically, the region is complex having diverse sacrificial geomorphology; high topography of Plio-Miocene age such as Khasi and Jaintia hills and small hillocks along the border. At the centre there is a vast low laying flood plain of recent origin with saucer shaped depressions, locally called Haors. Available limestone deposits in different parts of the region suggest that the whole area was under the ocean in the Oligo-Miocene. In the last 150 years three major earthquakes hit the city, at a magnitude of at least 7.5 on the Richter Scale, the last one took place in 1918, although many people are unaware that Sylhet lies on the earthquake prone zone of Bangladesh.</br></br></p>
+	
+		
+	</div>
+
+	<p id="area">AREAS OF SYLHET</p>
+	<div id="areapics">
+	<img id="dhaka" src="TravelImages/ratargul.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="dhakaname">RATARGUL SWAMP</p>
+	
+
+	<img id="ctg" src="TravelImages/jaflong.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="ctgname">JAFLONG</p>
+	
+	<img id="cox" src="TravelImages/bisnakandi.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="coxname">BISANAKANDI</p>
+	
+	<img id="syl" src="TravelImages/haor.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="sylname">TANGUAR HAOR</p>
+	
+	
+	
+	
+		
+	</div>
+
+	<p id="acco">ACCOMODATIONS IN SYLHET</p>
+
+	<div id="accopics">
+
+	<img id="hotel1" src="TravelImages/nirvana.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="hote11name">NIRVANA</p>
+	
+
+	<img id="hotel2" src="TravelImages/star.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="hotel2name">PACIFIC</p>
+	
+	
+	
+	
+		
+	</div>
+
+	</div>
+	
+
+	</header>
+	
+	
+
+	
+</body>
+</html>

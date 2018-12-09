@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CartMart | TRAVEL</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto+Slab" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+
+<style>
+	*{
+	margin:0;
+	padding: 0;
+}
+body{
+	background: #eeeeee;
+}
+
+.tm-container{
+	max-width: 1100px;
+	margin: 0 auto;
+
+}
+.tm-header{
+	background: #ffffff;
+}
+.tm-header::after{
+	content: " ";
+	clear: both;
+	display: block;
+	visibility: none;
+
+}
+
+
+.tm-logo{
+	float:left;
+
+}
+.tm-nav{
+	width: 700px;
+	float: right;
+	font-size: 25px;
+
+}
+.tm-nav ul li{
+	display: inline-block;
+	font-family: 'Ubuntu', sans-serif;
+}
+.tm-nav ul li a{
+	padding:10px 20px;
+	text-decoration: none;
+	color: #303030;
+	line-height: 60px;
+}
+
+.tm-nav ul li a:hover{
+	color: #3e99ff;
+}
+
+#home{
+	position: absolute;
+	top: 70px;
+	left: 100px;
+	 opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#bd{
+	color: white;
+	font-family: 'Roboto Slab', serif;
+	font-size: 48px;
+	position: absolute;
+	top: 250px;
+	left: 160px;
+	text-decoration: underline;
+}
+
+#explore{
+	color: black;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 32px;
+	position: absolute;
+	top: 650px;
+	left: 540px;
+}
+
+#choose{
+	color: black;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 60px;
+	position: absolute;
+	top: 900px;
+	left: 440px;
+}
+#areapics{
+	position: absolute;
+	top: 2150px;
+	left: 100px;
+	width: 1100px;
+}
+
+#dhaka{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#dhaka:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#dhakaname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 130px;
+	left: 100px;
+	
+}
+
+#view1{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1200px;
+	left: 320px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#ctg{
+	position: absolute;
+	top: 0px;
+	left: 550px;
+}
+#ctg:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#ctgname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 130px;
+	left: 630px;
+	
+}
+
+#view2{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1200px;
+	left: 880px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#cox{
+	position: absolute;
+	top: 309px;
+	left: 0px;
+}
+#cox:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#coxname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 449px;
+	left: 80px;
+	
+}
+
+#view3{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1510px;
+	left: 320px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#syl{
+	position: absolute;
+	top: 309px;
+	left: 550px;
+}
+#syl:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#sylname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 36px;
+	position: absolute;
+	top: 449px;
+	left: 720px;
+	
+}
+
+#view4{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1510px;
+	left: 880px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#khul{
+	position: absolute;
+	top: 618px;
+	left: 0px;
+}
+#khul:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#khulname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 32px;
+	position: absolute;
+	top: 750px;
+	left: 90px;
+	
+}
+
+#view5{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1820px;
+	left: 320px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#ban{
+	position: absolute;
+	top: 618px;
+	left: 550px;
+}
+#ban:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#banname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 32px;
+	position: absolute;
+	top: 760px;
+	left: 575px;
+	
+}
+
+#view6{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1820px;
+	left: 880px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+}
+
+#about{
+	color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	position: absolute;
+	top: 800px;
+	left: 100px;
+}
+
+#description{
+	
+	position: absolute;
+	top: 870px;
+	left: 100px;
+	width: 1100px;
+}
+#description p{
+	color: black;
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+}
+
+#climate{
+	color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	position: absolute;
+	top: 1650px;
+	left: 100px;
+}
+
+#description2{
+	
+	position: absolute;
+	top: 1720px;
+	left: 100px;
+	width: 1100px;
+}
+#description2 p{
+	color: black;
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+}
+
+#area{
+	color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	position: absolute;
+	top: 2050px;
+	left: 100px;
+}
+
+#acco{
+color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	position: absolute;
+	top: 3200px;
+	left: 100px;	
+}
+#accopics{
+	position: absolute;
+	top: 3300px;
+	left: 100px;
+}
+
+#hotel1{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#hotel1:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#hote11name{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 36px;
+	position: absolute;
+	top: 150px;
+	left: 180px;
+	
+}
+#hotel2{
+	position: absolute;
+	top: 0px;
+	left: 550px;
+}
+#hotel2:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#hotel2name{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 36px;
+	position: absolute;
+	top: 150px;
+	left: 730px;
+	
+}
+#hotel3{
+	position: absolute;
+	top: 309px;
+	left: 0px;
+}
+#hotel3:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#hotel3name{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 449px;
+	left: 160px;
+	
+}
+#hotel4{
+	position: absolute;
+	top: 309px;
+	left: 550px;
+}
+#hotel4:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#hotel4name{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 36px;
+	position: absolute;
+	top: 470px;
+	left: 750px;
+	
+}
+
+</style>
+</head>
+<body>
+<header class="tm-header" >
+	<div class="tm-container">
+		
+	<img  src="cart.png" height="70" width="100" class="tm-logo">
+
+	
+
+		<nav class="tm-nav ">
+			<ul>
+				<li><a href="index.html" font size="1">Home</a></li>
+				<li>|</li>
+				<li><a href="food.html">Food</a></li>
+				<li>|</li>
+				<li><a href="travel.html">Travel</a></li>
+				<li>|</li>
+				<li><a href="shop.html">Shop</a></li>
+				<li>|</li>
+				<li><a href="profile.html">Profile</a></li>
+			</ul>
+		</nav>
+		<img id="home" src="TravelImages/ctg.jpg" alt="Food pic" width="1100px" height="675px" ;">	
+	<p id="bd"> CHITTAGONG </p>
+	<p id="explore">EXPLORE CHITTAGONG </p>
+	
+	<p id="about">ABOUT</p>
+	<div id="description">
+	<p>Chittagong /tʃɪtəɡɒŋ/ (Bengali: চট্টগ্রাম Bengali pronunciation: [tʃɔt̠t̠ɔgram]) is a major coastal seaport city and financial centre in southeastern Bangladesh. The city has a population of more than 2.5 million[1] while the metropolitan area has a population of 4,009,423 at the 2011 Census,[1] making it the second largest city in the country. It is the capital of an eponymous district and division. The city is located on the banks of the Karnaphuli River between the Chittagong Hill Tracts and the Bay of Bengal. Much of Chittagong Division is located within the ecological Indo-Burma zone on the boundary of the India Plate and Burma Plate. This makes Chittagong the crossroads of the Indian subcontinent and Southeast Asia. The port city has been known by various names in history, including Chatigaon, Chatigam, Chattagrama, Islamabad, Chattala, Chaityabhumi and Porto Grande De Bengala.</br></br>
+
+The natural harbour of Chittagong is an ancient gateway to the region of Bengal. It was noted as one of the largest Eastern ports by the Roman geographer Ptolemy in the 1st century. As part of the rich seafaring tradition of the Bengali people, coastal Chittagong was settled and ruled by Indian and Bengali kingdoms. Arab traders saw well-developed currency, banking and shipping in Chittagong during the 9th century. Early cosmopolitan Muslims established dominance over the port as an entrepot of maritime trade,[5] while Arakan, Bengal and Tripura competed for control of the wider hinterland. Muslim conquest took place in the 14th century. Chittagong became the principal port of the Bengal Sultanate. It was used by several leading medieval global explorers, including Ibn Battuta and Niccolò de' Conti. Later, Mrauk U, with assistance from Portuguese trading posts, gained control of the area. The Mughal conquest of Chittagong reestablished Bengali control and ushered an era of stability and trade. The city was renamed as Islamabad. This diverse history is reflected in the rural Chittagonian dialect of Bengali, which has a nearly 50% Arabic-origin vocabulary, as well as Persian and Portuguese loanwords.[6]</br></br>
+
+Ceded to the British East India Company in 1760, Chittagong became the chief port of Eastern Bengal and Assam under the British Raj, as well as a hub of railways. A notable anti-colonial uprising took place in 1930. It was an important base for Allied Forces during the Burma Campaign in World War II. Rapid industrialization followed the war, as Chittagong became part of East Pakistan. During Bangladesh’s liberation war in 1971, Chittagong was site of the country’s declaration of independence.</br></br>
+
+Modern Chittagong is an important economic hub in South Asia. It is home to the Chittagong Stock Exchange and many of Bangladesh's oldest and largest companies. The Port of Chittagong is the largest international seaport on the Bay of Bengal.[7] It is the largest base of the Bangladesh Navy. However, despite having a high and growing urban per capita GDP in South Asia[8] and being one of the fastest growing cities in the world,[9] it has a poverty rate of 11.3%, as of 2010. Chittagong is reputed as a relatively clean city, but still confronts substantial logistical and socioeconomic problems. The mountainous hinterland of Chittagong is the most biodiverse region in Bangladesh, with 2000 endemic plants and various critically endangered wildlife.</br></br></p>
+	
+		
+	</div>
+
+	<p id="climate">CLIMATE</p>
+	<div id="description2">
+	<p>Chittagong lies at 22°22′0″N 91°48′0″E. It straddles the coastal foothills of the Chittagong Hill Tracts in southeastern Bangladesh. The Karnaphuli River runs along the southern banks of the city, including its central business district. The river enters the Bay of Bengal in an estuary located 12 kilometres (7.5 mi) west of downtown Chittagong. Mount Sitakunda is the highest peak in Chittagong District, with an elevation of 351 metres (1,152 ft).[41] Within the city itself, the highest peak is Batali Hill at 85.3 metres (280 ft). Chittagong has many lakes that were created under Mughal rule. In 1924, an engineering team of the Assam Bengal Railway established the Foy's Lake.[41]</br></br>
+
+	Under the Köppen climate classification, Chittagong has a tropical monsoon climate (Am).</br></br>
+
+Chittagong is vulnerable to North Indian Ocean tropical cyclones. The deadliest tropical cyclone to strike Chittagong was the 1991 Bangladesh cyclone, which killed 138,000 people and left as many as 10 million homeless.</br></br></p>
+	
+		
+	</div>
+
+	<p id="area">AREAS OF CHITTAGONG</p>
+	<div id="areapics">
+	<img id="dhaka" src="TravelImages/patenga.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="dhakaname">PATENGA BEACH</p>
+	
+
+	<img id="ctg" src="TravelImages/neval.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="ctgname">NEVAL SEA BEACH</p>
+	
+	<img id="cox" src="TravelImages/karnafuli.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="coxname">KARNAFULI RIVER</p>
+	
+	<img id="syl" src="TravelImages/foy.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="sylname">FOY'S LAKE</p>
+	
+	<img id="khul" src="TravelImages/zia.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="khulname">ZIA MEMORIAL MUSEUM</p>
+	
+	
+		
+	</div>
+
+	<p id="acco">ACCOMODATIONS IN CHITTAGONG</p>
+
+	<div id="accopics">
+
+	<img id="hotel1" src="TravelImages/radisson.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="hote11name">RADISSON</p>
+	
+
+	<img id="hotel2" src="TravelImages/peninsula.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="hotel2name">PENINSULA</p>
+	
+	<img id="hotel3" src="TravelImages/agrabad.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="hotel3name">AGRABAD</p>
+	
+	<img id="hotel4" src="TravelImages/club.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="hotel4name">CTGCLUB</p>
+	
+	
+		
+	</div>
+
+	</div>
+	
+
+	</header>
+	
+	
+
+	
+</body>
+</html>

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CartMart | TRAVEL</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto+Slab" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+
+<style>
+	*{
+	margin:0;
+	padding: 0;
+}
+body{
+	background: #eeeeee;
+}
+
+.tm-container{
+	max-width: 1100px;
+	margin: 0 auto;
+
+}
+.tm-header{
+	background: #ffffff;
+}
+.tm-header::after{
+	content: " ";
+	clear: both;
+	display: block;
+	visibility: none;
+
+}
+
+
+.tm-logo{
+	float:left;
+
+}
+.tm-nav{
+	width: 700px;
+	float: right;
+	font-size: 25px;
+
+}
+.tm-nav ul li{
+	display: inline-block;
+	font-family: 'Ubuntu', sans-serif;
+}
+.tm-nav ul li a{
+	padding:10px 20px;
+	text-decoration: none;
+	color: #303030;
+	line-height: 60px;
+}
+
+.tm-nav ul li a:hover{
+	color: #3e99ff;
+}
+
+#home{
+	position: absolute;
+	top: 70px;
+	left: 100px;
+	 opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#bd{
+	color: white;
+	font-family: 'Roboto Slab', serif;
+	font-size: 48px;
+	position: absolute;
+	top: 250px;
+	left: 160px;
+	text-decoration: underline;
+}
+
+#explore{
+	color: black;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 32px;
+	position: absolute;
+	top: 650px;
+	left: 580px;
+}
+
+#choose{
+	color: black;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 60px;
+	position: absolute;
+	top: 900px;
+	left: 440px;
+}
+#areapics{
+	position: absolute;
+	top: 1900px;
+	left: 100px;
+	width: 1100px;
+}
+
+#dhaka{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#dhaka:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#dhakaname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 150px;
+	left: 150px;
+	
+}
+
+#view1{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1200px;
+	left: 320px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#ctg{
+	position: absolute;
+	top: 0px;
+	left: 550px;
+}
+#ctg:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#ctgname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 140px;
+	left: 720px;
+	
+}
+
+#view2{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1200px;
+	left: 880px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#cox{
+	position: absolute;
+	top: 309px;
+	left: 0px;
+}
+#cox:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#coxname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 449px;
+	left: 150px;
+	
+}
+
+#view3{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1510px;
+	left: 320px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#syl{
+	position: absolute;
+	top: 309px;
+	left: 550px;
+}
+#syl:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#sylname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 36px;
+	position: absolute;
+	top: 449px;
+	left: 700px;
+	
+}
+
+#view4{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1510px;
+	left: 880px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#khul{
+	position: absolute;
+	top: 618px;
+	left: 0px;
+}
+#khul:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#khulname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 750px;
+	left: 110px;
+	
+}
+
+#view5{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1820px;
+	left: 320px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#ban{
+	position: absolute;
+	top: 618px;
+	left: 550px;
+}
+#ban:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#banname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 32px;
+	position: absolute;
+	top: 760px;
+	left: 700px;
+	
+}
+
+#view6{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1820px;
+	left: 880px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+}
+
+#about{
+	color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	position: absolute;
+	top: 800px;
+	left: 100px;
+}
+
+#description{
+	
+	position: absolute;
+	top: 870px;
+	left: 100px;
+	width: 1100px;
+}
+#description p{
+	color: black;
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+}
+
+#climate{
+	color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	position: absolute;
+	top: 1500px;
+	left: 100px;
+}
+
+#description2{
+	
+	position: absolute;
+	top: 1570px;
+	left: 100px;
+	width: 1100px;
+}
+#description2 p{
+	color: black;
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+}
+
+#area{
+	color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	position: absolute;
+	top: 1800px;
+	left: 100px;
+}
+
+#acco{
+color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	position: absolute;
+	top: 2900px;
+	left: 100px;	
+}
+#accopics{
+	position: absolute;
+	top: 3000px;
+	left: 100px;
+}
+
+#hotel1{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#hotel1:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#hote11name{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 36px;
+	position: absolute;
+	top: 150px;
+	left: 220px;
+	
+}
+#hotel2{
+	position: absolute;
+	top: 0px;
+	left: 550px;
+}
+#hotel2:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#hotel2name{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 36px;
+	position: absolute;
+	top: 150px;
+	left: 750px;
+	
+}
+#hotel3{
+	position: absolute;
+	top: 309px;
+	left: 0px;
+}
+#hotel3:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#hotel3name{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 449px;
+	left: 130px;
+	
+}
+#hotel4{
+	position: absolute;
+	top: 309px;
+	left: 550px;
+}
+#hotel4:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#hotel4name{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 36px;
+	position: absolute;
+	top: 449px;
+	left: 700px;
+	
+}
+
+</style>
+</head>
+<body>
+<header class="tm-header" >
+	<div class="tm-container">
+		
+	<img  src="cart.png" height="70" width="100" class="tm-logo">
+
+	
+
+		<nav class="tm-nav ">
+			<ul>
+				<li><a href="index.html" font size="1">Home</a></li>
+				<li>|</li>
+				<li><a href="food.html">Food</a></li>
+				<li>|</li>
+				<li><a href="travel.html">Travel</a></li>
+				<li>|</li>
+				<li><a href="shop.html">Shop</a></li>
+				<li>|</li>
+				<li><a href="profile.html">Profile</a></li>
+			</ul>
+		</nav>
+		<img id="home" src="TravelImages/bandarban.jpg" alt="Food pic" width="1100px" height="675px" ;">	
+	<p id="bd"> BANDARBAN </p>
+	<p id="explore">EXPLORE BANDARBAN </p>
+	
+	<p id="about">ABOUT</p>
+	<div id="description">
+	<p>Bandarban (Bengali: বান্দরবান) is a district in South-Eastern Bangladesh, and a part of the Chittagong Division.[1] It is one of the three districts that make up the Chittagong Hill Tracts, the others being Rangamati District and Khagrachhari District.[2] Bandarban is regarded as one of the most attractive travel destinations in Bangladesh. Bandarban (meaning the dam of monkeys), or in Marma or Arakanese language as "Rwa-daw Mro" is also known as Arvumi or the Bohmong Circle (of the rest of the three hill districts Rangamati is the Chakma Circle, Raja Devasish Roy and Khagrachari is the Mong Circle, Raja Sachingprue Marma). Bandarban town is the home town of the Bohmong Chief (currently King, or Raja, U Cho Prue Marma) who is the head of the Marma population. It also is the administrative headquarters of Bandarban district, which has turned into one of the most exotic tourist attractions in Bangladesh.</br></br>
+	We welcome guests, but don't want Bandarban to become crowded or polluted like Rangamati. We don't want to lose our culture nor see it consigned to a museum.
+
+— Raja Aung Shue Prue Chowdhury, on tourism</br></br>
+Bandarban lies, by bus, eight hours away from Dhaka, two hours from Chittagong and three hours from Cox's Bazaar. It is also possible to get there by a six-hour bus ride from Rangamati.The Buddha Dhatu Jadi, the Buddhist temple in Bangladesh, located in Balaghata, 4 km from the town.This place attracts many tourists every year. This Theravada Buddhist temple is made completely in the style of South-East Asia and houses the second largest statue of Buddha in Bangladesh. The waterfall named Shoilo Propat at Milanchari is another place tourists like to visit. The numerous Buddhist temples, known as kyang in local tongue, and bhihars in the town include the highly notable the Rajvihar (royal vihar) at Jadipara and the Ujanipara Bhihar. Bawm villages around Chimbuk, and Mru villages a little further off, are also lie within a day's journey from the town. Prantik Lake, Jibannagar and Kyachlong Lake are some more places of interest. Boat ride on the river Sangu is one of the main attraction here for tourists.</br></br>
+
+Starting on January 7, 2015 the Home Ministry has enforced the provision of "no free passes" for foreigners visiting the three Chittagong Hill Tracts districts – Rangamati, Khagrachhari and Bandarban. As a result, foreigners need to submit an application to the Home Ministry a month ahead for their scheduled visit</br></br></p>
+	
+		
+	</div>
+
+	<p id="climate">CLIMATE</p>
+	<div id="description2">
+	<p>Bandarban's climate is classified as tropical. Bandarban has significant rainfall most months, with a short dry season. The Köppen-Geiger climate classification is Am. The average temperature in Bandarban is 25.9 °C. The rainfall here averages 2528 mm..</br></br></p>
+	
+		
+	</div>
+
+	<p id="area">AREAS OF BANDARBAN</p>
+	<div id="areapics">
+	<img id="dhaka" src="TravelImages/nilachal.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="dhakaname">NILACHAL</p>
+	
+
+	<img id="ctg" src="TravelImages/nilgiri.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="ctgname">NILGIRI</p>
+	
+	<img id="cox" src="TravelImages/nafakhum.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="coxname">NAFAKHUM</p>
+	
+	<img id="syl" src="TravelImages/sangu.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="sylname">SANGU RIVER</p>
+	
+	<img id="khul" src="TravelImages/boga.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="khulname">BOGA LAKE</p>
+	
+	<img id="ban" src="TravelImages/keokradong.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="banname">KEOKRADONG</p>
+		
+	</div>
+
+	<p id="acco">ACCOMODATIONS IN BANDARBAN</p>
+
+	<div id="accopics">
+
+	<img id="hotel1" src="TravelImages/sairu.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="hote11name">SAIRU</p>
+	
+
+	<img id="hotel2" src="TravelImages/resort.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="hotel2name">NILGIRI</p>
+	
+	
+	
+		
+	</div>
+
+	</div>
+	
+
+	</header>
+	
+	
+
+	
+</body>
+</html>

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CartMart | TRAVEL</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto+Slab" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+
+<style>
+	*{
+	margin:0;
+	padding: 0;
+}
+body{
+	background: #eeeeee;
+}
+
+.tm-container{
+	max-width: 1100px;
+	margin: 0 auto;
+
+}
+.tm-header{
+	background: #ffffff;
+}
+.tm-header::after{
+	content: " ";
+	clear: both;
+	display: block;
+	visibility: none;
+
+}
+
+
+.tm-logo{
+	float:left;
+
+}
+.tm-nav{
+	width: 700px;
+	float: right;
+	font-size: 25px;
+
+}
+.tm-nav ul li{
+	display: inline-block;
+	font-family: 'Ubuntu', sans-serif;
+}
+.tm-nav ul li a{
+	padding:10px 20px;
+	text-decoration: none;
+	color: #303030;
+	line-height: 60px;
+}
+
+.tm-nav ul li a:hover{
+	color: #3e99ff;
+}
+
+#home{
+	position: absolute;
+	top: 70px;
+	left: 100px;
+	 opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#bd{
+	color: white;
+	font-family: 'Roboto Slab', serif;
+	font-size: 48px;
+	position: absolute;
+	top: 250px;
+	left: 160px;
+	text-decoration: underline;
+}
+
+#explore{
+	color: black;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 32px;
+	position: absolute;
+	top: 650px;
+	left: 580px;
+}
+
+#choose{
+	color: black;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 60px;
+	position: absolute;
+	top: 900px;
+	left: 440px;
+}
+#areapics{
+	position: absolute;
+	top: 1900px;
+	left: 100px;
+	width: 1100px;
+}
+
+#dhaka{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#dhaka:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#dhakaname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 150px;
+	left: 100px;
+	
+}
+
+#view1{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1200px;
+	left: 320px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#ctg{
+	position: absolute;
+	top: 0px;
+	left: 550px;
+}
+#ctg:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#ctgname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 140px;
+	left: 700px;
+	
+}
+
+#view2{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1200px;
+	left: 880px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#cox{
+	position: absolute;
+	top: 309px;
+	left: 0px;
+}
+#cox:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#coxname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 449px;
+	left: 130px;
+	
+}
+
+#view3{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1510px;
+	left: 320px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#syl{
+	position: absolute;
+	top: 309px;
+	left: 550px;
+}
+#syl:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#sylname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 36px;
+	position: absolute;
+	top: 449px;
+	left: 620px;
+	
+}
+
+#view4{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1510px;
+	left: 880px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#khul{
+	position: absolute;
+	top: 618px;
+	left: 0px;
+}
+#khul:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#khulname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 750px;
+	left: 110px;
+	
+}
+
+#view5{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1820px;
+	left: 320px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
+
+#ban{
+	position: absolute;
+	top: 618px;
+	left: 550px;
+}
+#ban:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#banname{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 32px;
+	position: absolute;
+	top: 760px;
+	left: 575px;
+	
+}
+
+#view6{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 1820px;
+	left: 880px;
+	width: 130px;
+	height: 50px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+}
+
+#about{
+	color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	position: absolute;
+	top: 800px;
+	left: 100px;
+}
+
+#description{
+	
+	position: absolute;
+	top: 870px;
+	left: 100px;
+	width: 1100px;
+}
+#description p{
+	color: black;
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+}
+
+#climate{
+	color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	position: absolute;
+	top: 1430px;
+	left: 100px;
+}
+
+#description2{
+	
+	position: absolute;
+	top: 1500px;
+	left: 100px;
+	width: 1100px;
+}
+#description2 p{
+	color: black;
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+}
+
+#area{
+	color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	position: absolute;
+	top: 1800px;
+	left: 100px;
+}
+
+#acco{
+color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 40px;
+	position: absolute;
+	top: 2600px;
+	left: 100px;	
+}
+#accopics{
+	position: absolute;
+	top: 2700px;
+	left: 100px;
+}
+
+#hotel1{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#hotel1:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#hote11name{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 36px;
+	position: absolute;
+	top: 150px;
+	left: 150px;
+	
+}
+#hotel2{
+	position: absolute;
+	top: 0px;
+	left: 550px;
+}
+#hotel2:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#hotel2name{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 36px;
+	position: absolute;
+	top: 150px;
+	left: 770px;
+	
+}
+#hotel3{
+	position: absolute;
+	top: 309px;
+	left: 0px;
+}
+#hotel3:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#hotel3name{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	position: absolute;
+	top: 449px;
+	left: 130px;
+	
+}
+#hotel4{
+	position: absolute;
+	top: 309px;
+	left: 550px;
+}
+#hotel4:hover{
+	opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#hotel4name{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 36px;
+	position: absolute;
+	top: 449px;
+	left: 750px;
+	
+}
+
+</style>
+</head>
+<body>
+<header class="tm-header" >
+	<div class="tm-container">
+		
+	<img  src="cart.png" height="70" width="100" class="tm-logo">
+
+	
+
+		<nav class="tm-nav ">
+			<ul>
+				<li><a href="index.html" font size="1">Home</a></li>
+				<li>|</li>
+				<li><a href="food.html">Food</a></li>
+				<li>|</li>
+				<li><a href="travel.html">Travel</a></li>
+				<li>|</li>
+				<li><a href="shop.html">Shop</a></li>
+				<li>|</li>
+				<li><a href="profile.html">Profile</a></li>
+			</ul>
+		</nav>
+		<img id="home" src="TravelImages/cox.jpg" alt="Food pic" width="1100px" height="675px" ;">	
+	<p id="bd"> COX'S BAZAR </p>
+	<p id="explore">EXPLORE COX'S BAZAR </p>
+	
+	<p id="about">ABOUT</p>
+	<div id="description">
+	<p>Cox's Bazar (Bengali: কক্সবাজার অথবা ৭৫ মাইল বীচ, Koksbajar, Koksbazar or Kokshbajar) is a town, a fishing port and district headquarters in Bangladesh. The beach in Cox's Bazar is an unbroken 120 km (75 mi) sandy sea beach with a gentle slope, is the world's longest.[2][3][4] It is located 150 km (93 mi) south of the industrial port Chittagong. Cox's Bazar is also known by the name Panowa, whose literal translation means "yellow flower." Its other old name was "Palongkee".</br></br>
+
+The modern Cox's Bazar derives its name from Captain Hiram Cox (died 1799), an officer of the British East India Company. Cox was appointed Superintendent of Palongkee outpost after Warren Hastings became Governor of Bengal. Captain Cox was specially mobilised to deal with a century-long conflict between Arakan refugees and local Rakhains. He embarked upon the task of rehabilitating refugees in the area and made significant progress. Captain Cox died in 1799 before he could finish his work. To commemorate his role in rehabilitation work, a market was established and named Cox's Bazar ("Cox's Market") after him.</br></br>
+
+Today, Cox's Bazar is one of the most-visited tourist destinations in Bangladesh, though it is not a major international tourist destination. In 2013, the Bangladesh Government formed the Tourist Police unit to better protect local and foreign tourists, as well as to look after the nature and wildlife in the tourist spots of Cox's Bazar.</br></br>
+
+Cox's Bazar (Town), Cox's Bazar municipality, was constituted in 1869, eventually becoming a B-grade municipality in 1989. Located along the Bay of Bengal in South Eastern Bangladesh, Cox's Bazar Town is a large port and health resort. But it is famous mostly for its long natural sandy beach. The municipality covers an area of 6.85 km2 (2.64 sq mi) with 27 mahallas and 9 wards and has a population of 51,918.[6] Cox's Bazar is connected by road and air with Chittagong.</br></br></p>
+	
+		
+	</div>
+
+	<p id="climate">CLIMATE</p>
+	<div id="description2">
+	<p>Cox's Bazar town with an area of 6.85 km2 (2.64 sq mi), is located at 21°35′0″N 92°01′0″E and bounded by Bakkhali River on the north and East, Bay of Bengal in the West, and Jhilwanj Union in the south.</br></br>
+
+The climate of Bangladesh is mostly determined by its location in the tropical monsoon region: high temperature, heavy rainfall, generally excessive humidity, and distinct seasonal variations.[13] The climate of Cox's bazar is mostly similar to the rest of the country. It is further characterised by the location in the coastal area. The annual average temperature in Cox's Bazar remains at about a maximum of 34.8 °C (94.6 °F) and a minimum of 16.1 °C (61.0 °F). The average amount of rainfall remains at 3,524 mm (138.7 in).</br></br></p>
+	
+		
+	</div>
+
+	<p id="area">AREAS OF COX'S BAZAR</p>
+	<div id="areapics">
+	<img id="dhaka" src="TravelImages/cox3.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="dhakaname">COX'S BAZAR</p>
+	
+
+	<img id="ctg" src="TravelImages/himchori.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="ctgname">HIMCHARI</p>
+	
+	<img id="cox" src="TravelImages/inani.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="coxname">INANI BEACH</p>
+	
+	
+		
+	</div>
+
+	<p id="acco">ACCOMODATIONS IN COX'S BAZAR</p>
+
+	<div id="accopics">
+
+	<img id="hotel1" src="TravelImages/sayeman.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="hote11name">SAYEMAN</p>
+	
+
+	<img id="hotel2" src="TravelImages/tulip.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="hotel2name">ROYAL</p>
+	
+	<img id="hotel3" src="TravelImages/long.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="hotel3name">LONGBEACH</p>
+	
+	<img id="hotel4" src="TravelImages/ocean.jpg" alt="Food pic" width="550px" height="309px" ;">
+	<p id="hotel4name">PARADISE</p>
+	
+	
+		
+	</div>
+
+	</div>
+	
+
+	</header>
+	
+	
+
+	
+</body>
+</html>

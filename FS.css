@@ -1,0 +1,136 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.tm-container{
+	max-width: 1100px;
+	margin: 0 auto;
+}
+#tm-h1{
+	color: white;
+	
+    font-size: 80px;
+   position: absolute;
+top: 250px;
+left: 500px;
+}
+#tm-h2{
+	color: white;
+	font-size: 80px;
+	position: absolute;
+top: 350px;
+left: 330px;
+    
+    
+	
+}
+#tm-h3{
+	color: white;
+	font-size: 60px;
+	border: 20px;
+	border: white solid;
+
+	position: absolute;
+top: 450px;
+left: 700px;
+    
+    
+	
+}
+body {
+    background-image: url("HomeImages/back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: 1800px 900px;
+}
+
+
+
+.tm-container{
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+
+
+.tm-nav{
+	width: 300px;
+	float: right;
+	font-size: 25px;
+	color: white;
+
+
+}
+.tm-nav ul li{
+	display: inline-block;
+	border: white solid;
+}
+.tm-nav ul li a{
+	padding:10px 20px;
+	text-decoration: none;
+	color: white;
+	line-height: 60px;
+	font-color:white solid;
+}
+
+.tm-nav ul li a::hover{
+	color: #3e99ff;
+}
+
+#sign{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 18px;
+	position: absolute;
+	top: 5px;
+	right: 50px;
+	width: 130px;
+	height: 70px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    
+    border-radius: 20px 20px 20px 20px;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+	
+	
+}
+#login{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 18px;
+	position: absolute;
+	top: 5px;
+	right: 190px;
+	width: 130px;
+	height: 70px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    
+    border-radius: 20px 20px 20px 20px;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+	
+	
+}
+#explore{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 470px;
+	left: 560px;
+	width: 180px;
+	height: 70px;
+	background-color: #CCC;
+    background-repeat:no-repeat;
+    border: solid black;
+    cursor:pointer;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+
+}
